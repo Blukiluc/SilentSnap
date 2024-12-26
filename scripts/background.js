@@ -1,9 +1,9 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
-    if (message.action === "callTestFunction") {
+    if (message.action === "callSearchFunction") {
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
             if (tabs.length > 0) {
-                chrome.tabs.sendMessage(tabs[0].id, { action: "callTestFunction" }, (response) => {
+                chrome.tabs.sendMessage(tabs[0].id, { action: "callSearchFunction" }, (response) => {
                     console.log("Response from content script:", response);
                 });
             }
