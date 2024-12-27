@@ -21,7 +21,7 @@ SilentSnap is a Chrome extension designed for Snapchat Web that allows you to sa
 3. Open a photo within the next 10 seconds.
 4. The photo opens in a new tab, and you can download it.
 
-## Crédits
+## Credits
 - Developed by Blukiluc.
 - Inspired by Chrome extension development tutorials:
   - [Hello World Tutorial](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)

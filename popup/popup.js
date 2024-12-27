@@ -11,7 +11,7 @@ function countdown(start) {
         i--;
         if (i < 0) {
             clearInterval(countdown);
-            console.log("Compte à rebours terminé!");
+            console.log("Countdown over!");
             countdownTimer.innerText = "Error: Image not found."
             countdownTimer.style.color = "#f00"
         }
@@ -21,7 +21,7 @@ function countdown(start) {
 button.addEventListener('click', function () {
     startMenu.classList.add("hidden");
     countdownMenu.classList.remove("hidden");
-    countdown(3);
+    countdown(10);
     chrome.runtime.sendMessage({ action: "callSearchFunction" }, (response) => {
         console.log("Response from background script:", response);
     });
