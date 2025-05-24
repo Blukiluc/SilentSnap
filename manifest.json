@@ -1,25 +1,25 @@
 {
-  "manifest_version": 3,
-  "name": "SilentSnap",
-  "version": "1.0",
-  "description": "Download snapchat photos without notifications.",
-  "icons": {
-      "16": "images/icon16.png",
-      "32": "images/icon32.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
-  },
-  "background": {
-      "service_worker": "scripts/background.js"
-  },
-  "content_scripts": [
-      {
-          "js": ["scripts/content.js"],
-          "matches": ["https://web.snapchat.com/*"]
-      }
-  ],
-  "action": {
-      "default_popup": "popup/popup.html"
-  },
-  "permissions": ["tabs", "scripting"]
-}
+    "manifest_version": 3,
+    "name": "SilentSnap",
+    "version": "1.0",
+    "description": "Download snapchat photos without notifications.",
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": ["https://www.snapchat.com/web*"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": ["tabs", "scripting"]
+    }
