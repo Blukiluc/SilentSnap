@@ -3,7 +3,7 @@ const startMenu = document.querySelector(".start");
 const countdownTimer = document.getElementById("countdown-timer");
 const countdownMenu = document.querySelector(".countdown");
 
-timer = 20;
+timer = 5;
 
 function countdown(start) {
     let i = start-1;
